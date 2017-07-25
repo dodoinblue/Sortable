@@ -153,10 +153,10 @@
 					autoScroll.vx = vx;
 					autoScroll.vy = vy;
 
-					clearInterval(autoScroll.pid);
+					// clearInterval(autoScroll.pid);
 
 					if (el) {
-						autoScroll.pid = setInterval(function () {
+						// autoScroll.pid = setInterval(function () {
 							scrollOffsetY = vy ? vy * speed : 0;
 							scrollOffsetX = vx ? vx * speed : 0;
 
@@ -170,7 +170,7 @@
 								el.scrollTop += scrollOffsetY;
 								el.scrollLeft += scrollOffsetX;
 							}
-						}, 24);
+						// }, 24);
 					}
 				}
 			}
